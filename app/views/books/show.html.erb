@@ -4,3 +4,5 @@
 <p>Years Published: <%= @book.years_published %></p>
 
 <%= link_to "Edit #{@book.title}", edit_book_path(@book), method: :get %>
+
+<%= button_to "Shred #{@book.title}", book_path, method: :delete %>
