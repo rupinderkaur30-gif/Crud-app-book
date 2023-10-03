@@ -2,7 +2,7 @@
 
 <ul>
 <% @books.each do |book|%>
-    <%= link_to book.title, book_path(book)  %>
+    <%= link_to book.title.titleize, book_path(book)  %>
     <% end %>
 </ul>
 
