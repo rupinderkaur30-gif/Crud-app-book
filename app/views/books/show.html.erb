@@ -1,0 +1,6 @@
+<h1><%= @book.title %></h1>
+<h3>By <%= @book.author %></h3>
+<p>Genre: <%= @book.genre %></p>
+<p>Years Published: <%= @book.years_published %></p>
+
+<%= link_to "Edit #{@book.title}", edit_book_path(@book), method: :get %>
